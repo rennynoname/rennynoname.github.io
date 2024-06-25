@@ -86,7 +86,7 @@ img {width: 65%; height: 50%; opacity: 1;}
   
   .centered {
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 79%;
     transform: translate(-50%, -50%);
   }
