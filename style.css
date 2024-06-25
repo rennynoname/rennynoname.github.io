@@ -8,10 +8,9 @@ body {
 position: absolute; 
 width: 80%;
 overflow-x: hidden;
-overflow-y: hidden;
     
 /* center page with absolute position */
-top: 0%; left: 50%; transform: translate(-50%, 0);
+top: 10%; left: 50%; transform: translate(-50%, 0);
 margin: 2em 0;
 padding: 4em;
 box-shadow: 2px 3px 20px rgb(193, 191, 190), 0 0 60px #dcdcdb inset;
