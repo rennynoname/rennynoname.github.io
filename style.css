@@ -10,7 +10,7 @@ width: 90%;
 overflow-x: hidden;
     
 /* center page with absolute position */
-top: 5%; left: 50%; transform: translate(-50%, 0);
+top: 0%; left: 50%; transform: translate(-50%, 0);
 margin: 2em 0;
 padding: 4em;
 box-shadow: 2px 3px 20px rgb(193, 191, 190), 0 0 60px #dcdcdb inset;
@@ -20,21 +20,21 @@ filter: url(#wavy2);
 
 ul { list-style-type: none;}
 
-a {text-decoration: none;}
+h1 {color: rgb(115, 27, 27); font-weight: 300; line-height: 1.2; margin: 10px 0;} 
 
-h1 {font-weight: 300; line-height: 1.2; margin: 10px 0;} 
+h2 {color: rgb(115, 27, 27); font-weight: 300; font-size:small; line-height: 9; margin: 10px 0;}
 
-h2 {font-weight: 300; font-size:small; line-height: 9; margin: 10px 0;}
+h3 { line-height: 3;}
 
 span    {line-height: 5;} 
 
-footer {font-family:'salina'; font-size: large;}
+footer {color: rgb(115, 27, 27); font-family:'salina'; font-size: large;}
 
 text  {font-family: 'salina';  font-size: 100%; }
 
 p {margin: 10px 0;}
 
-img {width: 80%; height: 50%; opacity: 1;}
+img {width: 100%; opacity: 1; }
 
 
 .center-align {text-align: center;} 
@@ -55,8 +55,9 @@ img {width: 80%; height: 50%; opacity: 1;}
 
 .container {
     position: relative;
-    text-align: center;
+    text-align: right;
     color: white;
+   
   }
   
   .bottom-left {
@@ -85,10 +86,11 @@ img {width: 80%; height: 50%; opacity: 1;}
   
   .centered {
     position: absolute;
-    top: 40%;
-    left: 86%;
+    top: 60%;
+    left: 60%;
     transform: translate(-50%, -50%);
   }
+
 
 
 
