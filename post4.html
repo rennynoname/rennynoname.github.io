@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/style.css">
+
+<style>
+* {
+	box-sizing: border-box
+}
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6, .mySlides7 {
+	display: none
+}
+img {
+	vertical-align: middle;
+}
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin:0 auto 25px;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom {
+    position: absolute;
+    bottom: px;
+    left: 20px;}
+
+ @-webkit-keyframes fade {
+ from {
+opacity: .4
+}
+to {
+	opacity: 1
+}
+}
+ @keyframes fade {
+ from {
+opacity: .4
+}
+to {
+	opacity: 1
+}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next, .text {
+	font-size: 11px
+}
+}
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+</style>
+</head>
+<body>
+
+    <!Title of page>
+    <h1 class="center-align"> <a  style="text-decoration: none; color: rgb(153, 24, 24)" href="index.html"> CREATING ESSENSE | <em>Alida Angafor</em></a></h1>
+    
+    <hr style="height:1px;border-width:1px 0px 0px 0px;"/> 
+    
+        <!header>
+    
+        <div class="flex-container"> 
+            <div><a style="text-decoration: none; color: rgb(83, 35, 35);" href="index.html">Home</a> </div>
+            <div><a style="text-decoration: none; color: rgb(83, 35, 35)" href="page1.html">Post</a> </div>
+            <div><a style="text-decoration: none; color: rgb(83, 35, 35)" href="about.html">About</a> </div> 
+          
+        <!* remove html and replace with ./ ./post ./about,>
+    
+        </div>
+
+        <P>ABOUT THE TIME I SPENT IN BUENOS AIRES, ARGENTINA</P>
+        <p>6th July 2024</p>     
+<p>I don’t remember the exact date I arrived in Argentina, but I know it was sometime in the afternoon. It took about 20 hrs to get from Santiago, Chile to Buenos Aires, Argentina by Bus. The bus company I used was CATA Internationally, the bus was clean, no weird shit happened, definitely would recommend. Crossing the Chile-Argentina border was an experience in itself. Besides the usual customs shenanigans you would expect, it was just a surreal experience. When we pulled up to the border the Argentinian flag was just blowing in the wind and in the background were the Andes mountains beside the customs building there seemed to be nothing else for miles, I felt my heart leap to my chest as I took it all in, smiling to myself. It was really that dramatic.</p>
+<div class="slideshow-container">
+    <!border>
+  <div class="mySlides1 fade"> 
+    <!--Image here-->
+    <img src="images/border3.jpg" style="width:100%">
+    <div class="image img1"></div>
+    <div class="text">Crossing the Argentina-Chile Border</div>
+  </div>
+
+  <div class="mySlides1 fade"> 
+    <!--Image here-->
+    <img src="images/border2.jpg" style="width:100%">
+    <div class="image img2"></div>
+  </div>
+
+  <div class="mySlides1 fade"> 
+    <!--Image here-->
+    <img src="images/border1.jpg" style="width:100%">
+    <div class="image img3"></div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a> <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,0)"></span> <span class="dot" onclick="currentSlide(2,0)"></span> <span class="dot" onclick="currentSlide(3,0)"></span> </div>
+</div>
+
+<p>In Buenos Aires, we were dropped off somewhere, and from there I caught a bus to the hostel I will be staying at for the next couple of weeks. The name of the hostel was  Parla Hostel. The first thing I noticed when I walked in was the layout of the place. On the first floor was a common area and a kitchen. From the first floor, you could see the second, the third, and the fourth floor. Imagine a square with walls lined with rooms and the center left empty, it was exactly that. I later found out there was a roof area with a bar and space to hang out, the views from the roof were incredible. I loved sitting up there in the mornings, drinking coffee while writing, working on my grad school applications, or hanging out with people. </p>
+<div class="slideshow-container">
+<!Hostel>
+  <div class="mySlides2 fade"> 
+    <!--Image here-->
+    <img src="images/above.jpg" style="width:100%">
+    <div class="image img1"></div>
+    <div class="text">Parla Hostel</div>
+  </div>
+  <div class="mySlides2 fade"> 
+    <!--Image here-->
+    <img src="images/reading.jpg" style="width:100%">
+    <div class="image img2"></div>
+  </div>
+  <div class="mySlides2 fade"> 
+    <!--Image here-->
+    <img src="images/roof.jpg" style="width:100%">
+    <div class="image img3"></div>
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a> <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,1)"></span> <span class="dot" onclick="currentSlide(2,1)"></span> <span class="dot" onclick="currentSlide(3,1)"></span> </div>
+</div>
+ 
+<p>After I was done taking in the space, I was shown to my room, or rather the room I will be sharing with a couple of other people. It was two separate rooms connected by a door. In the outer room, there were two individual beds and in the inner room, there was a bunk bed on one side and a single bed on the other. My bed was the top bunk, all the other beds were already occupied by other volunteers. The bunk below me was occupied by a girl from Brazil, she spoke English, Spanish, and Portuguese. She was a vegan and was applying for graduate schools in Chile at the time, at least that is what she told me. The single bed across from us was occupied by another girl from Brazil. I just have to say she was downright one of the most beautiful people my eyes have had the privilege of beholding, but I digress. She was passionate about tango and I think came to Argentina mainly for it, but I am not entirely sure that is true. She mainly spoke Portuguese and Spanish and because I spoke neither of those languages we did not really get to know each other all that well, but through the language barrier, I could still see she was a lovely person. In the other room with the two single beds was a guy from England and a girl from another city in Argentina, Cordoba I think was the city she was from. The guy from England left a few days after I arrived so I didn't really get to know him well enough to form an opinion of him, but I will say from my first impressions of him he was friendly and helpful, if I recall correctly he was very passionate about history. The girl from Argentina, I will describe her as bubbly and happy, she seems to put a lot of effort into coming off that way, if she was actually happy, that is a different matter and one I can not speak on because she also left a few days after I arrived. After the guy from England and the girl from Argentina left, I was able to move into the outer room. I had the room to myself for a day or two before a girl from Russia arrived. I remember sitting on my bed and her on hers and us talking about things on the first day she arrived. I don’t remember what we talked about, but I could just tell we would get along and as time showed, I was not wrong. I will be honest, I sometimes find myself wondering why it was so easy to be friends with her, maybe it was because we are similar in some fundamental way, maybe some part of me recognized something in her, but maybe it was as simple as there existed a mutual interest in being friends. I am not sure but whatever the reason, I am grateful. Later on, a couple of other volunteers will arrive. There were the Catalanians who lived in a room downstairs, a girl from Spain and a girl from Mexico. </p>
+<p>Over the course of about three weeks, we got to know each other and explored Buenos Aires together. In addition to hanging out in the hostel talking we would visit some of the popular sites in Buenos Aires together. I remember us all spending an afternoon at the botanical garden, Jardin Botanico Carlos Thays, is what the garden is called. We walked around admiring the statues, took silly photos, and had lunch there before heading back. I also remember us exploring the cultural center there, the art was cool to look at- the stack of mail in one of the rooms was definitely something. We had some nights out, we went to this bar one night, it might have been the night of the girl from Russia’s birthday. We had a party at the hostel, got a cake and everything, it was a good time. A lot of my memories of my time in Buenos Aires are with the girl from Russia, we just spent so much time together. We went to La Boca together, which is this really colorful part of the city. We went to el Ateneo Grand Splendid, which is a theater that was turned into a bookstore, it was pretty remarkable actually. Sometimes we just wandered the city together or ran errands together. There was this bakery a few yards from the hostel that we went to almost every day. Oh, I almost forgot, we also visited the infamous Recoleta cemetery. Now, I have been to a lot of cemeteries in my lifetime, I have a thing about cemeteries. I just hang out in cemeteries. There is something relaxing about cemeteries, but that’s not the point here. The point is I have been to many cemeteries and Recoleta is the most beautiful cemetery I have ever been to in my life. The statues, the layout, the vibes, it was art. It is also where Eva Peron is buried. If you don’t know who she is, look it up. </p>
+
+<!recoleta>
+<div class="slideshow-container">
+  <div class="mySlides3 fade"> 
+    <img src="images/recolataa.jpg" style="width:100%">
+    <!--Image here-->
+    <div class="text">Recoleta cemetery</div>
+  </div>
+  <div class="mySlides3 fade"> 
+    <img src="images/recoletab.jpg" style="width:100%">
+    <!--Image here-->
+
+  </div>
+  <div class="mySlides3 fade"> 
+    <img src="images/recoletac.jpg" style="width:100%">
+    <!--Image here-->
+
+  </div>
+  <div class="mySlides3 fade"> 
+    <img src="images/recoleta3.jpg" style="width:100%">
+    <!--Image here-->
+  
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a> <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,2)"></span> <span class="dot" onclick="currentSlide(2,2)"></span> <span class="dot" onclick="currentSlide(3,2)"></span> </div>
+</div>
+
+<!Garden>
+<div class="slideshow-container">
+  <div class="mySlides4 fade"> 
+    <!--Image here-->
+    <img src="images/garden1.jpg" style="width:100%">
+    <div class="text">An afternoon at the Botanical Garden</div>
+  </div>
+  <div class="mySlides4 fade"> 
+    <!--Image here-->
+    <img src="images/garden2.jpg" style="width:100%">
+  </div>
+  <div class="mySlides4 fade"> 
+    <!--Image here-->
+    <img src="images/garden3.jpg" style="width:100%">
+  </div>
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a> <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,3)"></span> <span class="dot" onclick="currentSlide(2,3)"></span> <span class="dot" onclick="currentSlide(3,3)"></span> </div>
+</div>
+
+<p>I will say of all the things I did while in Buenos Aires, one of my favorite things I did was watching tango. I remember this one night I went wandering around the city by myself and stumbled upon this tango event that was happening in front of the cultural center. It was packed but I managed to push through the crowd and found a spot to stand on the stairs from where I had a pretty good view. With the cars and bus in the background, the music, and the dancers I could not help but fall in love with the city. </p>
+<!Tango>
+<div class="slideshow-container">
+  <div class="mySlides5 fade"> 
+    <!--Image here-->
+    <img src="images/tango2.jpg" style="width:100%">
+    <div class="text">Tango in Buenos Aires</div>
+  </div>
+  <div class="mySlides5 fade"> 
+    <!--Image here-->
+    <img src="images/tango3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a> <a class="next" onclick="plusSlides(1, 4)">&#10095;</a>
+  <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,4)"></span> <span class="dot" onclick="currentSlide(2,4)"></span> <span class="dot" onclick="currentSlide(3,4)"></span> </div>
+</div>
+
+
+<p>Besides hanging out with each other and exploring Buenos Aires, we did have to do some work around the hostel. We were volunteers after all and I am pretty sure we all found the place through workaway. This means in exchange for a bed to sleep in, access to all community space, and free drinks at the bar, we had agreed to work  4 hrs a day 5 days a week. The work was easy, just a little time-consuming. Working entitled either making beds or serving drinks at the bar. Usually, if I was scheduled for the morning shift which was making beds, then I would do that and be done around 11 am then go sightseeing, sometimes by myself and other times with the girl from Russia. On days when I was scheduled for the evening shift, which was working at the bar, I would spend most of the morning working on my grad school applications, spend the afternoon doing something touristy, and then spend the evening working at the bar. Obviously, the day and evening shift had their pros and cons. If one worked in the morning then you had the rest of the day to do whatever you wanted which was nice and if you worked in the evening you got to be a bartender for the night which is objectively cool and you got to meet loads of people. </p>
+
+<p>I think it was during one of my evening shifts when I first met Micheal. He was this  6 ft dude from Russia with really long hair. He was a guest at the hostel and was hanging out at the bar that night. Somehow we ended up talking to each other. Yes, he did in fact only speak Russian, so how did we communicate you ask,  I will just say Google Translate was certainly working over time, it was… challenging for sure. Regardless we hung out at the hostel a couple of times after that night and well the vibes were simply there. After a few days at the hostel,  he told me he was leaving the hostel. He apparently found a room to rent nearby since he planned on being in Buenos Aires for a while.  He invited me over for a movie night and I was like yeah I am totally down, so one evening I went over.  The room was spacious and the bed was quite big were my first thoughts when I walked into the room. The room was a little dusty like it had not been lived in for a while, but besides that it was clean. We set up his computer, picked a movie, got in bed, and started watching it. I don’t remember the name of the movie, I wasn’t all that interested in the movie, but I know it was some movie about some guy trying to solve some sort of religious mystery in Rome. A couple of minutes into the movie, I closed the computer and got under the comforter. He put the computer aside and joined me under the comforter. He kissed me...we did not have sex, but I did cry on his chest with his arms around me. So yeah crying on a stranger's chest in a foreign country, 10/10 would recommend. We texted a couple of times after that, but we did not see each other again, shocker. I will say though, there is nothing but a warm feeling for him. He was sweet in a way that just thinking about him now makes me smile. I don’t mind how things ended. Just glad to have met him at all. These days we don’t talk, but every now and then he likes my Instagram story, so there is that. </p>
+
+<p>While I am on the subject of encounters in Buenos Aires, I will mention at the time I met the guy from Russia, I was also talking to this other guy from Israel. He was a guest at the hostel as well. He had been hanging out with the other volunteers at the hostel a whole lot before I arrived and with me hanging out with the volunteers as well we ended up existing around each other. There were vibes and one day he asked me out on a date. We got dinner and walked around Buenos Aires for a bit. I don’t really remember what I ordered or what he ordered, but I remember some of the things we talked about. I remember us talking about his time in the Israeli army and his family back home. He shared that he was part of a kibbutz, I had to spend some time looking that up after the date, it's interesting, and I would recommend looking it up.  He also shared with me that he had some sort of chronic intestinal issue which either had to do with why he left the army or it was something he got while in the army that he just has to deal with for the rest of his life, I can not remember. It was a lovely evening overall.  We didn’t hang out much after that evening. The last time we hung out was the night he, the other volunteers and I went dancing at this tecno club. I remember us all sitting outside and smoking cigarettes after dancing for a while. Someone said something to me in Spanish and I said “no comprende" and he corrected me saying it is actually “No entiendo.” He gave me some explanation but I do not remember what it was. After some more dancing, we left the club and headed back to the hostel where we spent some time on the roof drinking fernet and whatever else was avaliable while talking and staring down at the city. It was a lovely night. The guy from Isreal left a few days after that night and we haven't spoken since.</p>
+
+<div class="slideshow-container">
+    <!Night out>
+    <div class="slideshow-container">
+        <div class="mySlides6 fade"> 
+          <!--Image here-->
+          <img src="images/night1.jpg" style="width:100%">
+          <div class="text">A Night out</div>
+        </div>
+        <div class="mySlides6 fade"> 
+          <!--Image here-->
+          <img src="images/night2.jpg" style="width:100%">
+        </div>
+        <div class="mySlides6 fade"> 
+          <!--Image here-->
+          <img src="images/night3.jpg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a> <a class="next" onclick="plusSlides(1, 5)">&#10095;</a>
+        <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,4)"></span> <span class="dot" onclick="currentSlide(2,5)"></span> <span class="dot" onclick="currentSlide(4,5)"></span> </div>
+      </div>
+
+    
+    <p>I did have a good time in Buenos Aires. During our last couple of days in Buenos Aires, at least my last couple of days. The girls from Catalina hosted this lunch where we got to experience some of the food common in Catalan. The food was so good, my mouth is literally watering right now just thinking about it. It was a wonderful afternoon and a perfect way to wrap up our time in Buenos Aires before people started heading out. I was among the first to leave, so not really sure where people headed after Buenos Aires. I know the girl from Russia went to Chile for a bit, went back to Russia, and then came back to Buenos Aires. The girls from Catalan went to Cordoba Argentina for a bit before heading back to Spain. The other girl from Spain started dating one of the owners of the hostel so she went back to Spain but comes back to Buenos Aires often. The vegan from Brazil I think went to Brazil for a bit before heading to Spain for grad school. The other girl from Brazil is still in Buenos Aires, I have no idea where the girl from Mexico headed. Me, I headed to Bolivia. </p>
+      <div class="slideshow-container">
+         <!Lunch>
+         <div class="slideshow-container">
+            <div class="mySlides7 fade"> 
+              <!--Image here-->
+              <img src="images/food1.jpg" style="width:100%">
+              <div class="text">The Lunch made by the Catalanians</div>
+            </div>
+            <div class="mySlides7 fade"> 
+              <!--Image here-->
+              <img src="images/food2.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a> <a class="next" onclick="plusSlides(1, 6)">&#10095;</a>
+            <div style="text-align:center"> <span class="dot" onclick="currentSlide(1,5)"></span> <span class="dot" onclick="currentSlide(2,6)"></span> <span class="dot" onclick="currentSlide(5,6)"></span> </div>
+          </div>
+      
+    <p>Although most of the volunteers left and new ones arrived to take their place, unlike with the hostel in Chile it did not feel like the place disappeared once we left. It feels like a place I could go back to and although some things would have changed the important things would still be the same. </p>
+
+
+<script>
+var slideIndex = [1,1,1,1,1,1,1];
+var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+showSlides(1, 3);
+showSlides(1, 4);
+showSlides(1, 5);
+showSlides(1, 6);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n, no);
+}
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+<div class="bottom">  
+    <a style="text-decoration: none; color: rgb(83, 35, 35);" href="page1.html">Back to post</a>    
+</div>
+</body>
+</html>
