@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -14,6 +16,25 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  opacity: 1;
+}
+
+.center-align {
+  text-align: center;
+}
+
+/* ---------- Page wrapper ---------- */
 
 .page {
   width: 100%;
@@ -30,6 +51,7 @@ h1 {
   letter-spacing: 2px;
   text-align: center;
   color: #ece7e1;
+  line-height: 1.2;
   margin: 0 0 0.4em 0;
 }
 
@@ -44,7 +66,29 @@ h1 em {
   font-size: 0.7em;
 }
 
-.title-divider {
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #8c8178;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  color: #b7afa6;
+  line-height: 1.6;
+}
+
+span {
+  line-height: 1.6;
+  color: #cfc7be;
+}
+
+.title-divider, hr {
   border: none;
   border-top: 1px solid #4a3f3a;
   width: 220px;
@@ -53,10 +97,12 @@ h1 em {
 
 /* ---------- Navigation ---------- */
 
-nav.flex-container {
+.flex-container {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 2.5em;
+  height: auto;
   margin-bottom: 3em;
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: 2px;
@@ -64,7 +110,14 @@ nav.flex-container {
   text-transform: uppercase;
 }
 
-nav.flex-container a {
+.flex-container > div {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  width: auto;
+}
+
+.flex-container a {
   text-decoration: none;
   color: #b7afa6;
   transition: color 0.3s ease;
@@ -72,9 +125,13 @@ nav.flex-container a {
   border-bottom: 1px solid transparent;
 }
 
-nav.flex-container a:hover {
+.flex-container a:hover {
   color: #ece7e1;
   border-bottom: 1px solid #6b1f2a;
+}
+
+.item {
+  width: 10em;
 }
 
 /* ---------- Hero image (home page) ---------- */
@@ -149,12 +206,12 @@ footer {
   text-align: center;
   margin-top: 3.5em;
   padding-top: 1.8em;
+  color: #8c8178;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
 }
 
 footer hr {
-  border: none;
-  border-top: 1px solid #4a3f3a;
-  width: 220px;
   margin: 0 auto 1.4em auto;
 }
 
@@ -198,6 +255,45 @@ footer p {
   color: #5c5450;
   text-transform: uppercase;
   font-family: 'EB Garamond', serif;
+}
+
+/* ---------- Positioning utilities (kept for compatibility) ---------- */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: #ece7e1;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
