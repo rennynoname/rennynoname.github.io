@@ -35,13 +35,13 @@ img {
 }
 
 a {
-  color: #b7afa6;
+  color: #8a5a3c;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #ece7e1;
+  color: #b07a52;
 }
 
 /* ---------- Page wrapper ---------- */
@@ -129,14 +129,14 @@ span {
 
 .flex-container a {
   text-decoration: none;
-  color: #b7afa6;
+  color: #8a5a3c;
   transition: color 0.3s ease;
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
 }
 
 .flex-container a:hover {
-  color: #ece7e1;
+  color: #b07a52;
   border-bottom: 1px solid #6b1f2a;
 }
 
@@ -246,13 +246,13 @@ footer p {
 
 .social-links a {
   text-decoration: none;
-  color: #b7afa6;
+  color: #8a5a3c;
   border-bottom: 1px solid transparent;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: #ece7e1;
+  color: #b07a52;
   border-bottom: 1px solid #6b1f2a;
 }
 
@@ -265,6 +265,13 @@ footer p {
   color: #5c5450;
   text-transform: uppercase;
   font-family: 'EB Garamond', serif;
+}
+
+/* ---------- Back link (post pages) ---------- */
+
+.back-link {
+  margin-top: 2.5em;
+  text-align: left;
 }
 
 /* ---------- Positioning utilities (kept for compatibility) ---------- */
@@ -305,6 +312,5 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
   
 
