@@ -1,98 +1,204 @@
-*{
-    box-sizing: border-box;
-    padding: 0 auto;
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital@0;1&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-position: absolute; 
-width: 90%;
-overflow-x: hidden;
-    
-/* center page with absolute position */
-top: 0%; left: 50%; transform: translate(-50%, 0);
-margin: 2em 0;
-padding: 4em;
-box-shadow: 2px 3px 20px rgb(112, 108, 106), 0 0 60px #f5f1ea inset;
-background: #faf9f3;
-filter: url(#wavy2);
-
-background-image: url(data:image/png;base64,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);
-
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0d0d0e 0%, #1a1a1c 55%, #14100f 100%);
+  color: #d8d3cd;
+  font-family: 'EB Garamond', Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-ul { list-style-type: none;}
+.page {
+  width: 100%;
+  max-width: 760px;
+  padding: 4em 2em 3em 2em;
+}
 
-h1 {color: rgb(153, 24, 24); font-weight: 300; line-height: 1; margin: 10px 0;} 
+/* ---------- Headings ---------- */
 
-h2 {color: rgb(83, 35, 35); font-weight: 300; font-size:small; line-height: 9; margin: 10px 0;}
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ece7e1;
+  margin: 0 0 0.4em 0;
+}
 
-h3 { line-height: 3;}
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
 
-span    {line-height: 5;} 
+h1 em {
+  font-style: italic;
+  color: #b7afa6;
+  font-size: 0.7em;
+}
 
-footer {color: rgb(83, 35, 35); font-family:'salina'; font-size: large;}
+.title-divider {
+  border: none;
+  border-top: 1px solid #4a3f3a;
+  width: 220px;
+  margin: 0 auto 2.2em auto;
+}
 
-text  {font-family: 'salina';  font-size: 100%; }
+/* ---------- Navigation ---------- */
 
-p {margin: 10px 0;}
+nav.flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+  margin-bottom: 3em;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
 
-img {width: 100%; opacity: 1; }
+nav.flex-container a {
+  text-decoration: none;
+  color: #b7afa6;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
 
+nav.flex-container a:hover {
+  color: #ece7e1;
+  border-bottom: 1px solid #6b1f2a;
+}
 
-.center-align {text-align: center;} 
+/* ---------- Hero image (home page) ---------- */
 
-.flex-container  {
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .item {
-    width: 10em;
-  }
+.hero-image {
+  display: block;
+  max-width: 280px;
+  width: 60%;
+  margin: 0 auto 2.8em auto;
+  filter: grayscale(35%) brightness(0.9) contrast(1.05);
+  border-radius: 2px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
 
-.flex-container > div {font-weight: 500; line-height: 0.2; margin: 10px 0; width: 100px;} 
+/* ---------- Quote blocks (home page) ---------- */
 
+.quote-block {
+  text-align: center;
+  margin-bottom: 2.6em;
+  padding: 0 1em;
+}
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-   
-  }
-  
-  .bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  .top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  
-  .top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-  }
-  
-  .bottom-right {
-    position: absolute;
-    bottom: px;
-    right: 16px;
-  }
-  
-  .centered {
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.quote-block p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #cfc7be;
+  margin: 0;
+}
+
+.quote-block .attribution {
+  margin-top: 0.6em;
+  font-size: 0.95rem;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #8c8178;
+}
+
+.quote-block.secondary p {
+  font-style: normal;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05rem;
+  color: #b7afa6;
+}
+
+/* ---------- Body prose (about/post pages) ---------- */
+
+.prose {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #cfc7be;
+}
+
+.prose p {
+  margin: 0 0 1.6em 0;
+}
+
+.prose p:first-of-type::first-letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.1em;
+  padding-top: 0.1em;
+  color: #ece7e1;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  margin-top: 3.5em;
+  padding-top: 1.8em;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #4a3f3a;
+  width: 220px;
+  margin: 0 auto 1.4em auto;
+}
+
+footer p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #8c8178;
+  margin: 0 0 0.8em 0;
+}
+
+/* ---------- Social links ---------- */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #b7afa6;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ece7e1;
+  border-bottom: 1px solid #6b1f2a;
+}
+
+/* ---------- Made-by line ---------- */
+
+.made-by {
+  margin-top: 1em;
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  color: #5c5450;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+}
 
 
 
