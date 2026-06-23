@@ -1,79 +1,150 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="device-width">
-      <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creating Essence | About</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital@0;1&display=swap');
 
-    </head>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(160deg, #0d0d0e 0%, #1a1a1c 55%, #14100f 100%);
+      color: #d8d3cd;
+      font-family: 'EB Garamond', Georgia, serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-    <!Title of page>
-<h1 class="center-align">CREATING ESSENSE | <em>Alida Angafor</em>
+    .page {
+      width: 100%;
+      max-width: 760px;
+      padding: 4em 2em 3em 2em;
+    }
 
-</h1>
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 2.2rem;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #ece7e1;
+      margin: 0 0 0.4em 0;
+    }
 
-<hr >
+    h1 em {
+      font-style: italic;
+      color: #b7afa6;
+      font-size: 0.7em;
+    }
 
-    <!header>
+    .title-divider {
+      border: none;
+      border-top: 1px solid #4a3f3a;
+      width: 220px;
+      margin: 0 auto 2.2em auto;
+    }
 
-    <div class="flex-container"> 
-      <div><a style="text-decoration: none; color: rgb(83, 35, 35); font-size: large;" href="index.html">Home</a> </div>
-      <div><a style="text-decoration: none; color: rgb(83, 35, 35); font-size: large;" href="page1.html">Post</a> </div>
-      <div><a style="text-decoration: none; color: rgb(83, 35, 35); font-size: large;" href="about.html">About</a> </div> 
-      
-    <!* remove html and replace with ./ ./post ./about,>
+    nav.flex-container {
+      display: flex;
+      justify-content: center;
+      gap: 2.5em;
+      margin-bottom: 3em;
+      font-family: 'Cormorant Garamond', serif;
+      letter-spacing: 2px;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    nav.flex-container a {
+      text-decoration: none;
+      color: #b7afa6;
+      transition: color 0.3s ease;
+      padding-bottom: 4px;
+      border-bottom: 1px solid transparent;
+    }
+
+    nav.flex-container a:hover {
+      color: #ece7e1;
+      border-bottom: 1px solid #6b1f2a;
+    }
+
+    .prose {
+      font-size: 1.05rem;
+      line-height: 1.85;
+      color: #cfc7be;
+    }
+
+    .prose p {
+      margin: 0 0 1.6em 0;
+    }
+
+    .prose p:first-of-type::first-letter {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem;
+      float: left;
+      line-height: 0.8;
+      padding-right: 0.1em;
+      padding-top: 0.1em;
+      color: #ece7e1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3.5em;
+      padding-top: 1.8em;
+    }
+
+    footer hr {
+      border: none;
+      border-top: 1px solid #4a3f3a;
+      width: 220px;
+      margin: 0 auto 1.4em auto;
+    }
+
+    .made-by {
+      margin-top: 1em;
+      font-size: 0.78rem;
+      letter-spacing: 1.5px;
+      color: #5c5450;
+      text-transform: uppercase;
+      font-family: 'EB Garamond', serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <h1>Creating Essence | <em>Alida Angafor</em></h1>
+    <hr class="title-divider" />
+
+    <nav class="flex-container">
+      <a href="index.html">Home</a>
+      <a href="page1.html">Post</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <div class="prose">
+      <p>Hi! My name is Alida Angafor, I am 25 and currently living in Salida, Colorado. Before moving to Salida, I was living in Durango, where I worked with SouthWest Conservation Corps in the summer and fall and then worked at the Boys and Girls Club and the local ski resort there in the winter. I intended to stay there only for the summer when I first moved there, but I loved the people and place so much that I ended up staying for about a year. I would have stayed longer, but had to move to Salida when I was offered a position here with the Department of Human Services as a caseworker with the child welfare division. I have only been here a couple of months, since April, but I can say with absolute certainty that it has definitely been quite an experience, to say the least. I do enjoy the work. Sure, working with families to ensure the safety of vulnerable populations such as children, who are often overlooked in the place I am from, is very rewarding and healing in some ways, but it is also just nice feeling like a part of things. It feels nice not having to work as hard as I have had to in the past just to feel tethered. These days I just am.</p>
+
+      <p>Anyway, before Durango and Salida, I spent about six months traveling in South America and about two months traveling in Europe. I started in Chile and, traveling primarily by bus, made my way to Colombia. Along the way, I worked in hostels and communes. From Colombia, I flew to Portugal and, traveling solely by train, made my way across Western Europe. My trip ended in Turkey, from where I flew back to the United States. Traveling for eight months was fun and liberating, lonely at times sure, and even tiring, but it was also just a necessary thing I needed to do. Before I decided to go traveling, I think I was at the lowest I had ever been. I was living in Hilo, Hawaii at the time, working as a program guide with Pacific Quest Horticultural Therapy Program, which is a residential program for troubled teens and young adults. I went to work and did the bare minimum I needed to do to not be homeless, but outside of that, I did nothing else. I had little to no interest in getting to know anyone or do anything; life simply did not excite me. I remember spending hours crying in my cute little studio apartment by the river, which in hindsight cost way too much. I was miserable, in truth I had been miserable for the longest time. I saw a therapist who told me that I had persistent depressive disorder, also known as dysthymia. He also told me that he did not think I was clinically depressed, but that he thought I was philosophically depressed. I don't entirely understand what that means, but I thought it was hilarious. I had quite literally thought myself into depression, it seemed. I mean, that is kind of funny. Anyway, I do not know when the decision was made, but after about six months in Hawaii, I decided I was going to go traveling. I booked a flight to Chile, packed a backpack, sold everything else, and well, the rest is history.</p>
+
+      <p>Prior to Hawaii and traveling and everything else, I worked in Utah as a program guide at a therapy program for troubled teenage boys. Before that, I was in college. I graduated in 2021 with a bachelor's degree in philosophy and sociology and a minor in astronomy. I am sure I will get around to reflecting on the whole college experience at some point. I went to high school in Washington, DC, and attended middle school, elementary school, and kindergarten in Cameroon, which is where I was born. I barely think of Cameroon these days, but it remains a significant part of who I am. I have not been there in over twelve years, but I would like to go back someday. I have a lot of family there. My father is there, but I do not really talk to him. He pissed me off many years ago and I suppose I am not over it just yet. I may or may not get around to writing more on that someday.</p>
+
+      <p>What I mainly hope to write about is my experience of the world from my standpoint. Don't ask me why, because I have no good reasons. I just like writing. I have wanted to start a blog like this for a long time and am just glad to be finally doing it.</p>
     </div>
 
-    <text>
-      <p>Hi! My name is Alida Angafor, I am 25 and currently living in Salida Colorado. Before moving to Salida, 
-        I was living in Durango, where I worked with Southwest Conservation Corp in the summer and fall and then 
-        worked at the Boys and Girls Club and the local ski resort there in the winter. I intended to stay there 
-        only for the summer when I first moved there, but I loved the people and place so much that I ended up 
-        staying there for about a year. Would have stayed longer, but had to move to Salida when I was offered 
-        a position here with the Department of Human Services as a caseworker with the child welfare division. 
-        I have only been here a couple of months, since April, but I can say with absolute certainty that it has 
-        definitely been quite an experience, to say the least. I do enjoy the work. Sure, working with families 
-        to ensure the safety of vulnerable populations such as children who are often overlooked in the place I 
-        am from is very rewarding and healing in some ways, but it is also just nice feeling like a part of things. 
-        It feels nice not having to work as hard as I have had to in the past just to feel tethered, these days I 
-        just am.</p>
+    <footer>
+      <hr />
+      <p class="made-by">Website made by yours truly</p>
+    </footer>
 
-        <p>Anyway before Durango and Salida, I spent about six months traveling in South America and about two 
-          months traveling in Europe. I started in Chile and traveling primarily by bus, I made my way to 
-          Columbia. Along the way, I worked in hostels and communes. From Columbia, I flew to Portugal and 
-          traveling solely by train made my way across Western Europe. My trip ended in Turkey from where 
-          I flew back to the United States. Traveling for eight months was fun and liberating, lonely at 
-          times sure and even tiring, but it was also just a necessary thing I needed to do.  Before I 
-          decided to go traveling, I think I was at the lowest I had ever been. I was living in Hilo, Hawaii 
-          at the time, working as a program guide with pacific quest horticultural therapy program, which is 
-          a residential program for troubled teens and young adults. I went to work and did the bare minimum 
-          I needed to do to not be homeless, but outside of that, I did nothing else. I had little to no interest 
-          in getting to know anyone or do anything, life simply did not excite me. I remember spending hours 
-          crying in my cute little studio apartment by the river, which in hindsight cost way too much. 
-          I was miserable, in truth I had been miserable for the longest time. I saw a therapist who told me 
-          that I had persistent depressive disorder also known as dysthymia. He also did tell me that he did not think I was 
-          clinically depressed but he thought I was philosophically depressed, I don't entirely understand what that means, but  I thought was hilarious. I had 
-          quite literally thought myself into depression it seemed, I mean that is kind of funny. Anyway, I do 
-          not know when the decision was made, but after about six months in Hawaii, I decided I was going to 
-          go traveling. I booked a flight to Chile, packed a backpack, sold everything else and well the rest 
-          is history.</p>
-        
-      <p>Prior to Hawaii and traveling and everything else, I worked in Utah as a program guide at a therapy 
-        program for troubled teenage boys. Before that, I was in college. I graduated in 2021 with a bachelor 
-        degree in philosophy and sociology and a minor in astronomy. I am sure I will get around to reflecting 
-        on the whole college experience at some point. I went to high school in Washington, DC, and attended 
-        middle school, elementary school, and kindergarten in Cameroon, which is where I was born. I barely 
-        think of Cameroon these days, but it remains to be a significant part of who I am. I have not been 
-        there in over twelve years, but I would like to go back someday. I have a lot of family there. 
-        My father is there, but I do not really talk to him, he pissed me off many years ago and I suppose 
-        I am not over it just yet. I may or may not get around to writing more on that someday.</p>
-        
-      <p>What I mainly hope to write about is my experience of the world from my standpoint. Don't ask me 
-        why because I got no good reasons. I Just like writing, I have wanted to start a blog like this for 
-        a long time and am just glad to be finally doing it.  </p>
-    </text>
-
-
-
-  </html>
+  </div>
+</body>
+</html>
