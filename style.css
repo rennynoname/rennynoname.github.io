@@ -34,6 +34,16 @@ img {
   text-align: center;
 }
 
+a {
+  color: #b7afa6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ece7e1;
+}
+
 /* ---------- Page wrapper ---------- */
 
 .page {
@@ -295,9 +305,6 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
-
 
 
   
