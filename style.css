@@ -1,61 +1,308 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Creating Essence | Post</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .prose a:hover {
-      color: #c0392b;
-    }
-  </style>
-</head>
-<body>
-  <div class="page">
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital@0;1&display=swap');
 
-    <h1 class="center-align">Creating Essence | <em>Alida Angafor</em></h1>
-    <hr class="title-divider" />
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    <nav class="flex-container">
-      <a href="index.html">Home</a>
-      <a href="page1.html">Post</a>
-      <a href="about.html">About</a>
-    </nav>
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0d0d0e 0%, #1a1a1c 55%, #14100f 100%);
+  color: #d8d3cd;
+  font-family: 'EB Garamond', Georgia, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    <div class="prose">
-      <p>Latest Post</p>
+ul {
+  list-style-type: none;
+}
 
-      <p><a href="post9.html"><b>On my father's passing | 30th March 2025</b></a></p>
-   
+p {
+  margin: 10px 0;
+}
 
-      <p><a href="post8.html"><b>About Paraguay | 20th August 2024</b></a></p>
+img {
+  width: 100%;
+  opacity: 1;
+}
 
+.center-align {
+  text-align: center;
+}
 
-      <p><a href="post7.html"><b>Internalizing the fact that living comes down to a series of decisions | 31st July 2024</b></a></p>
-   
+a {
+  color: #b7afa6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-      <p><a href="post6.html"><b>What has been on my mind | 22nd July 2024</b></a></p>
+a:hover {
+  color: #ece7e1;
+}
 
+/* ---------- Page wrapper ---------- */
 
-      <p><a href="post5.html"><b>Bolivia, where to begin | 11th July 2024</b></a></p>
+.page {
+  width: 100%;
+  max-width: 760px;
+  padding: 4em 2em 3em 2em;
+}
 
+/* ---------- Headings ---------- */
 
-      <p><a href="post4.html"><b>About the time I spent in Buenos Aires, Argentina | 6th July 2024</b></a></p>
-    
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ece7e1;
+  line-height: 1.2;
+  margin: 0 0 0.4em 0;
+}
 
-      <p><a href="post3.html"><b>Tell me, what is it like being you | 4th July 2024</b></a></p>
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
 
+h1 em {
+  font-style: italic;
+  color: #b7afa6;
+  font-size: 0.7em;
+}
 
-      <p><a href="post2.html"><b>About the time I spent in Santiago, Chile | 29th June 2024</b></a></p>
-    
-      <p><a href="post1.html"><b>Curb your expectations | 27th June 2024</b></a></p>
- 
-    </div>
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #8c8178;
+  line-height: 1.6;
+  margin: 10px 0;
+}
 
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  color: #b7afa6;
+  line-height: 1.6;
+}
 
-  </div>
-</body>
-</html>
+span {
+  line-height: 1.6;
+  color: #cfc7be;
+}
 
+.title-divider, hr {
+  border: none;
+  border-top: 1px solid #4a3f3a;
+  width: 220px;
+  margin: 0 auto 2.2em auto;
+}
+
+/* ---------- Navigation ---------- */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  height: auto;
+  margin-bottom: 3em;
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.flex-container > div {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  width: auto;
+}
+
+.flex-container a {
+  text-decoration: none;
+  color: #b7afa6;
+  transition: color 0.3s ease;
+  padding-bottom: 4px;
+  border-bottom: 1px solid transparent;
+}
+
+.flex-container a:hover {
+  color: #ece7e1;
+  border-bottom: 1px solid #6b1f2a;
+}
+
+.item {
+  width: 10em;
+}
+
+/* ---------- Hero image (home page) ---------- */
+
+.hero-image {
+  display: block;
+  max-width: 280px;
+  width: 60%;
+  margin: 0 auto 2.8em auto;
+  filter: grayscale(35%) brightness(0.9) contrast(1.05);
+  border-radius: 2px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+/* ---------- Quote blocks (home page) ---------- */
+
+.quote-block {
+  text-align: center;
+  margin-bottom: 2.6em;
+  padding: 0 1em;
+}
+
+.quote-block p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #cfc7be;
+  margin: 0;
+}
+
+.quote-block .attribution {
+  margin-top: 0.6em;
+  font-size: 0.95rem;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #8c8178;
+}
+
+.quote-block.secondary p {
+  font-style: normal;
+  font-family: 'EB Garamond', serif;
+  font-size: 1.05rem;
+  color: #b7afa6;
+}
+
+/* ---------- Body prose (about/post pages) ---------- */
+
+.prose {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: #cfc7be;
+}
+
+.prose p {
+  margin: 0 0 1.6em 0;
+}
+
+.prose p:first-of-type::first-letter {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.6rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.1em;
+  padding-top: 0.1em;
+  color: #ece7e1;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: center;
+  margin-top: 3.5em;
+  padding-top: 1.8em;
+  color: #8c8178;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+}
+
+footer hr {
+  margin: 0 auto 1.4em auto;
+}
+
+footer p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #8c8178;
+  margin: 0 0 0.8em 0;
+}
+
+/* ---------- Social links ---------- */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #b7afa6;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ece7e1;
+  border-bottom: 1px solid #6b1f2a;
+}
+
+/* ---------- Made-by line ---------- */
+
+.made-by {
+  margin-top: 1em;
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  color: #5c5450;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+}
+
+/* ---------- Positioning utilities (kept for compatibility) ---------- */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: #ece7e1;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
   
