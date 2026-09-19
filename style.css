@@ -76,6 +76,12 @@ h1 em {
   font-size: 0.7em;
 }
 
+.tagline {
+  font-size: 1rem;
+  color: #8c8178;
+  margin: 0 0 2em 0;
+}
+
 h2 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 300;
@@ -312,5 +318,187 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-  
+
+/* ---------- CV / résumé-style entries (About, Research) ---------- */
+
+.section-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: #ece7e1;
+  margin: 2.2em 0 1em 0;
+}
+
+.section-heading:first-of-type {
+  margin-top: 0.5em;
+}
+
+.cv-entry {
+  margin-bottom: 1.6em;
+}
+
+.cv-entry .role {
+  font-weight: 600;
+  color: #ece7e1;
+}
+
+.cv-entry .meta {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #8c8178;
+  margin-bottom: 0.3em;
+}
+
+.cv-entry p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #cfc7be;
+}
+
+.skills-list {
+  color: #cfc7be;
+  line-height: 1.8;
+}
+
+/* ---------- Journal index ---------- */
+
+.journal-intro {
+  margin-bottom: 2em;
+}
+
+.journal-list {
+  list-style: none;
+}
+
+.journal-entry {
+  padding: 0.9em 0;
+  border-bottom: 1px solid #2a2422;
+}
+
+.journal-entry:first-child {
+  padding-top: 0;
+}
+
+.journal-entry:last-child {
+  border-bottom: none;
+}
+
+.journal-entry a {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #ece7e1;
+}
+
+.journal-entry a:hover {
+  color: #b07a52;
+}
+
+.journal-entry .entry-date {
+  display: block;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #8c8178;
+  margin-top: 0.2em;
+}
+
+/* ---------- Photo galleries (journal posts) ---------- */
+
+.slideshow-container {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  margin: 2em auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  filter: grayscale(20%) brightness(0.92) contrast(1.05);
+}
+
+.mySlides,
+.mySlides1, .mySlides2, .mySlides3, .mySlides4,
+.mySlides5, .mySlides6, .mySlides7 {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ece7e1;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.4s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: #ece7e1;
+}
+
+.numbertext {
+  color: #ece7e1;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.text {
+  color: #ece7e1;
+  font-size: 0.85rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 3px;
+  background-color: #4a3f3a;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.dot.active, .dot:hover {
+  background-color: #8a5a3c;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from { opacity: .4; }
+  to { opacity: 1; }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text { font-size: 11px; }
+}
 

@@ -3,95 +3,21 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Creating Essence | Santiago, Chile</title>
+  <title>Alida Angafor | Santiago, Chile</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .mySlides { display: none; }
-
-    .slideshow-container {
-      max-width: 700px;
-      width: 100%;
-      position: relative;
-      margin: 2em auto;
-    }
-
-    .slideshow-container img {
-      width: 100%;
-      display: block;
-      border-radius: 2px;
-      filter: grayscale(20%) brightness(0.92) contrast(1.05);
-    }
-
-    .prev, .next {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: #ece7e1;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.4s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-      text-decoration: none;
-    }
-
-    .next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.5);
-      color: #ece7e1;
-    }
-
-    .numbertext {
-      color: #ece7e1;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
-    }
-
-    .dot {
-      cursor: pointer;
-      height: 12px;
-      width: 12px;
-      margin: 0 3px;
-      background-color: #4a3f3a;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.4s ease;
-    }
-
-    .dot.active, .dot:hover {
-      background-color: #8a5a3c;
-    }
-
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-      from { opacity: .4; }
-      to { opacity: 1; }
-    }
-  </style>
 </head>
 <body>
   <div class="page">
 
-    <h1 class="center-align"><a href="index.html">Creating Essence | <em>Alida Angafor</em></a></h1>
+    <h1><a href="index.html">Alida Angafor</a></h1>
+    <h2 class="tagline center-align">Creating Essence</h2>
     <hr class="title-divider" />
 
     <nav class="flex-container">
       <a href="index.html">Home</a>
-      <a href="page1.html">Post</a>
       <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="page1.html">Journal</a>
     </nav>
 
     <div class="prose">
@@ -153,38 +79,11 @@
     </div>
 
     <div class="back-link">
-      <a href="page1.html">Back to post</a>
+      <a href="page1.html">&larr; Back to Journal</a>
     </div>
 
   </div>
 
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) { slideIndex = 1; }
-      if (n < 1) { slideIndex = slides.length; }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
-  </script>
+  <script src="gallery.js"></script>
 </body>
 </html>
