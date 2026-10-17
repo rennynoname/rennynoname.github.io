@@ -518,3 +518,72 @@ footer p {
 @media only screen and (max-width: 600px) {
   .flex-container { gap: 1.2em; letter-spacing: 1px; }
 }
+
+/* ---------- Contact form ---------- */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  max-width: 560px;
+}
+
+.contact-form label {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #8c8178;
+  margin-top: 0.8em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  color: #ece7e1;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #3a3330;
+  border-radius: 2px;
+  padding: 0.6em 0.7em;
+  width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #8a5a3c;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .honey {
+  display: none;
+}
+
+.contact-form button {
+  align-self: flex-start;
+  margin-top: 1.4em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ece7e1;
+  background: transparent;
+  border: 1px solid #8a5a3c;
+  padding: 0.6em 1.8em;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #8a5a3c;
+}
+
+.form-sent {
+  color: #b07a52;
+  font-style: italic;
+  margin-bottom: 1.2em;
+}

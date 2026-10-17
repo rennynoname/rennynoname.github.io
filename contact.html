@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get in touch with Alida Angafor." />
+  <title>Alida Angafor | Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <h1><a href="index.html">Alida Angafor</a></h1>
+    <h2 class="tagline center-align">Creating Essence</h2>
+    <hr class="title-divider" />
+
+    <nav class="flex-container">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="page1.html">Journal</a>
+      <a href="Alida_Angafor_CV.pdf">CV</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <h3 class="section-heading">Contact Me</h3>
+
+    <p class="form-sent" id="form-sent" hidden>Thank you for your message. I will get back to you soon.</p>
+
+    <form class="contact-form" action="https://formsubmit.co/alidaangafor@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from alidaangafor.com" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_next" value="https://alidaangafor.com/contact.html?sent=1" />
+      <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" autocomplete="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" autocomplete="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="7" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>
+      <hr />
+      <p class="made-by">Website made by yours truly</p>
+    </footer>
+
+  </div>
+  <script>
+    if (new URLSearchParams(location.search).has('sent')) {
+      document.getElementById('form-sent').hidden = false;
+    }
+  </script>
+</body>
+</html>
