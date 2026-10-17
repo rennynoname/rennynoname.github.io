@@ -502,3 +502,19 @@ footer p {
   .prev, .next, .text { font-size: 11px; }
 }
 
+
+.cv-download {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  margin: 0.5em 0 0 0;
+}
+
+/* Let the nav wrap on narrow screens now that it has five links */
+.flex-container {
+  flex-wrap: wrap;
+  row-gap: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-container { gap: 1.2em; letter-spacing: 1px; }
+}
