@@ -509,6 +509,13 @@ footer p {
   margin: 0.5em 0 0 0;
 }
 
+/* Thesis PDF link inside a research entry (overrides .cv-entry p) */
+.cv-entry p.cv-download {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  margin-top: 0.5em;
+}
+
 /* Let the nav wrap on narrow screens now that it has five links */
 .flex-container {
   flex-wrap: wrap;
